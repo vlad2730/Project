@@ -66,7 +66,7 @@ import {BrowserRouter as Router, Route, Link, Switch, Redirect, useHistory} from
             <button onClick = {() => onAdd(goodCard.name, goodCard.price, goodCard._id,  goodCard.description, goodCard.images)}>BUY</button>
             {isAdmin && <button onClick = {() => onShow(!showUpdate)}>Редактировать</button>}
               
-            {/* {showUpdate && 
+            {showUpdate && 
             <div className = "updateWrapper">
               <input onChange = {(e) => changeName(e.target.value)} placeholder = "Change name"/>
               <textarea  onChange = {(e) => changeDescription(e.target.value)} placeholder = "Change description"/>
@@ -113,7 +113,7 @@ import {BrowserRouter as Router, Route, Link, Switch, Redirect, useHistory} from
 
               </button>
             </div>
-          } */}
+          }
           </div>
         }
 
